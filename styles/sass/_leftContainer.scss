@@ -1,0 +1,112 @@
+$colorBackground: #222;
+$colorPrimary: #62E0F0;
+$colorSecondary: rgb(98, 224, 240);
+$colortext: #fff;
+
+
+.left-container{
+    background-color: $colorBackground;
+    width: 30vh;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    justify-content: column;
+    text-align: center;
+    position: fixed;
+
+    
+    .date{
+        margin-top: 8rem;
+        img{
+            width: 90%;
+            height: auto;
+            border-radius: 30%;
+            &:hover{
+                transform: scale(1.1);
+                cursor: pointer;
+                background-color: $colorSecondary ;
+                transition: 2s linear;
+
+
+            }
+        }
+        h1{
+            color: $colorSecondary;
+            font-size: 2.5rem;
+        }
+        h3{
+            color: $colortext;
+            font-size: 1rem;
+        }
+    }
+    .main{
+        margin-top: 5rem;
+        a{
+            color: $colortext;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 30px;
+            transition: color 0.3s ease;
+        }
+        li{
+            list-style-type: none;
+            margin-bottom: 10px;
+            a{
+                color: $colortext;
+                text-decoration: none;
+                transition: color 0.3s ease;
+                &:hover{
+                    color: $colorSecondary;
+                    cursor: pointer;
+                    border-bottom: 2px solid $colorSecondary;
+                    border-top: 2px solid $colorSecondary;
+                }
+            }
+        }
+    }
+    footer{
+        padding: 10px;
+        font-size: 1.2rem;
+        margin-top: 2rem;
+
+        img{
+            margin: 10px;
+            width: 50px;
+            &:hover{
+                cursor: pointer;
+                    transform: scale(1.1);
+                    filter: brightness(0) 
+                            saturate(100%) 
+                            invert(89%) 
+                            sepia(28%) 
+                            saturate(3957%) 
+                            hue-rotate(157deg) 
+                            brightness(105%) 
+                            contrast(88%);
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    /* For screens smaller than 768px */
+    .left-container{
+        .date{
+            margin-top: 100px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    /* For screens smaller than 480px */
+    .left-container{
+        width: 100%;
+        height: auto;
+        .date{
+             margin-top: 150px;
+         }
+    }
+}
+

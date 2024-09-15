@@ -1,0 +1,26 @@
+@use "leftContainer";
+@use "rightContainer";
+
+
+//imports
+///font-family: "Whisper", cursive;
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Bitter:ital,wght@0,100..900;1,100..900&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Handjet:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Whisper&display=swap');
+///font-family: "Cinzel", serif;
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Bitter:ital,wght@0,100..900;1,100..900&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400..900&family=Handjet:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Whisper&display=swap');
+
+//use
+
+// estilos generales
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: "Cinzel", serif;
+    background-color: #222;
+}
